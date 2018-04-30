@@ -1,0 +1,1 @@
+json.array! @hair_colors, partial: 'hair_colors/hair_color', as: :hair_color

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @actor.name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @actor.date_of_birth %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @actor.gender %>
+</p>
+
+<p>
+  <strong>Headshot link:</strong>
+  <%= @actor.headshot_link %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @actor.instagram %>
+</p>
+
+<p>
+  <strong>Release form link:</strong>
+  <%= @actor.release_form_link %>
+</p>
+
+<p>
+  <strong>Medical form link:</strong>
+  <%= @actor.medical_form_link %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @actor.availability %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @actor.phone_number %>
+</p>
+
+<p>
+  <strong>Actor weight:</strong>
+  <%= @actor.actor_weight_id %>
+</p>
+
+<p>
+  <strong>Actor height:</strong>
+  <%= @actor.actor_height_id %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @actor.nationality_id %>
+</p>
+
+<p>
+  <strong>Eye color:</strong>
+  <%= @actor.eye_color_id %>
+</p>
+
+<p>
+  <strong>Hair color:</strong>
+  <%= @actor.hair_color_id %>
+</p>
+
+<%= link_to 'Edit', edit_actor_path(@actor) %> |
+<%= link_to 'Back', actors_path %>

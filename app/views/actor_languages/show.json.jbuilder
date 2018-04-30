@@ -1,0 +1,1 @@
+json.partial! "actor_languages/actor_language", actor_language: @actor_language

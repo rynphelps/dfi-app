@@ -1,0 +1,1 @@
+json.array! @film_casters, partial: 'film_casters/film_caster', as: :film_caster

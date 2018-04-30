@@ -1,0 +1,27 @@
+<%= form_for(actor_audition) do |f| %>
+  <% if actor_audition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor_audition.errors.count, "error") %> prohibited this actor_audition from being saved:</h2>
+
+      <ul>
+      <% actor_audition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :actor_id %>
+    <%= f.number_field :actor_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :audition_link_id %>
+    <%= f.number_field :audition_link_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,82 @@
+<%= form_for(actor) do |f| %>
+  <% if actor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor.errors.count, "error") %> prohibited this actor from being saved:</h2>
+
+      <ul>
+      <% actor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_of_birth %>
+    <%= f.date_select :date_of_birth %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :headshot_link %>
+    <%= f.text_field :headshot_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :instagram %>
+    <%= f.text_field :instagram %>
+  </div>
+
+  <div class="field">
+    <%= f.label :release_form_link %>
+    <%= f.text_field :release_form_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :medical_form_link %>
+    <%= f.text_field :medical_form_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :availability %>
+    <%= f.text_area :availability %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :actor_weight_id %>
+    <%= f.number_field :actor_weight_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :actor_height_id %>
+    <%= f.number_field :actor_height_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nationality_id %>
+    <%= f.number_field :nationality_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :eye_color_id %>
+    <%= f.number_field :eye_color_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hair_color_id %>
+    <%= f.number_field :hair_color_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

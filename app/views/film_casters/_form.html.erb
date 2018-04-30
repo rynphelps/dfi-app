@@ -1,0 +1,27 @@
+<%= form_for(film_caster) do |f| %>
+  <% if film_caster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(film_caster.errors.count, "error") %> prohibited this film_caster from being saved:</h2>
+
+      <ul>
+      <% film_caster.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :casting_director_id %>
+    <%= f.number_field :casting_director_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :film_id %>
+    <%= f.number_field :film_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

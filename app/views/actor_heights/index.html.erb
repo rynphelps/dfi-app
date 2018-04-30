@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actor Heights</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_heights.each do |actor_height| %>
+      <tr>
+        <td><%= actor_height.height %></td>
+        <td><%= link_to 'Show', actor_height %></td>
+        <td><%= link_to 'Edit', edit_actor_height_path(actor_height) %></td>
+        <td><%= link_to 'Destroy', actor_height, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor Height', new_actor_height_path %>

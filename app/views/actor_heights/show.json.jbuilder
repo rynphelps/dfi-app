@@ -1,0 +1,1 @@
+json.partial! "actor_heights/actor_height", actor_height: @actor_height

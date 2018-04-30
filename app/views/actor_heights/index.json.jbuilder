@@ -1,0 +1,1 @@
+json.array! @actor_heights, partial: 'actor_heights/actor_height', as: :actor_height

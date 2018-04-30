@@ -1,0 +1,22 @@
+<%= form_for(hair_color) do |f| %>
+  <% if hair_color.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hair_color.errors.count, "error") %> prohibited this hair_color from being saved:</h2>
+
+      <ul>
+      <% hair_color.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

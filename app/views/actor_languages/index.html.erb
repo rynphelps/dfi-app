@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actor Languages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Language dialect</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_languages.each do |actor_language| %>
+      <tr>
+        <td><%= actor_language.actor_id %></td>
+        <td><%= actor_language.language_dialect_id %></td>
+        <td><%= link_to 'Show', actor_language %></td>
+        <td><%= link_to 'Edit', edit_actor_language_path(actor_language) %></td>
+        <td><%= link_to 'Destroy', actor_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor Language', new_actor_language_path %>

@@ -1,0 +1,1 @@
+json.partial! "picture_links/picture_link", picture_link: @picture_link

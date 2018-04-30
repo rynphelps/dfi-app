@@ -1,0 +1,1 @@
+json.partial! "hair_colors/hair_color", hair_color: @hair_color

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Special skill:</strong>
+  <%= @actor_skill.special_skill_id %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @actor_skill.actor_id %>
+</p>
+
+<%= link_to 'Edit', edit_actor_skill_path(@actor_skill) %> |
+<%= link_to 'Back', actor_skills_path %>

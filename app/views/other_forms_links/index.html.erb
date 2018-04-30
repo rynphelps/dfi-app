@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Other Forms Links</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Form link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @other_forms_links.each do |other_forms_link| %>
+      <tr>
+        <td><%= other_forms_link.form_link %></td>
+        <td><%= link_to 'Show', other_forms_link %></td>
+        <td><%= link_to 'Edit', edit_other_forms_link_path(other_forms_link) %></td>
+        <td><%= link_to 'Destroy', other_forms_link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Other Forms Link', new_other_forms_link_path %>

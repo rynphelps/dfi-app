@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Audition Links</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Audition</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @audition_links.each do |audition_link| %>
+      <tr>
+        <td><%= audition_link.audition %></td>
+        <td><%= link_to 'Show', audition_link %></td>
+        <td><%= link_to 'Edit', edit_audition_link_path(audition_link) %></td>
+        <td><%= link_to 'Destroy', audition_link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Audition Link', new_audition_link_path %>

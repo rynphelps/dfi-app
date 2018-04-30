@@ -1,0 +1,2 @@
+json.extract! actor, :id, :name, :date_of_birth, :gender, :headshot_link, :instagram, :release_form_link, :medical_form_link, :availability, :email, :username, :password_digest, :phone_number, :actor_weight_id, :actor_height_id, :nationality_id, :eye_color_id, :hair_color_id, :created_at, :updated_at
+json.url actor_url(actor, format: :json)

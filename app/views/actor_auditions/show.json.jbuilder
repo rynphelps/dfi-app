@@ -1,0 +1,1 @@
+json.partial! "actor_auditions/actor_audition", actor_audition: @actor_audition

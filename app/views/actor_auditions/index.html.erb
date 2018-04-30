@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actor Auditions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Audition link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_auditions.each do |actor_audition| %>
+      <tr>
+        <td><%= actor_audition.actor_id %></td>
+        <td><%= actor_audition.audition_link_id %></td>
+        <td><%= link_to 'Show', actor_audition %></td>
+        <td><%= link_to 'Edit', edit_actor_audition_path(actor_audition) %></td>
+        <td><%= link_to 'Destroy', actor_audition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor Audition', new_actor_audition_path %>

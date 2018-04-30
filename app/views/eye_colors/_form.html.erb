@@ -1,0 +1,22 @@
+<%= form_for(eye_color) do |f| %>
+  <% if eye_color.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(eye_color.errors.count, "error") %> prohibited this eye_color from being saved:</h2>
+
+      <ul>
+      <% eye_color.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.array! @actor_weights, partial: 'actor_weights/actor_weight', as: :actor_weight

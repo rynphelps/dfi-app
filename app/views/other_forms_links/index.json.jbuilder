@@ -1,0 +1,1 @@
+json.array! @other_forms_links, partial: 'other_forms_links/other_forms_link', as: :other_forms_link

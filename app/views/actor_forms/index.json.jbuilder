@@ -1,0 +1,1 @@
+json.array! @actor_forms, partial: 'actor_forms/actor_form', as: :actor_form

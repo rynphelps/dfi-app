@@ -1,0 +1,1 @@
+json.partial! "actor_skills/actor_skill", actor_skill: @actor_skill

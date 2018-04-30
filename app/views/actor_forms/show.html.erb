@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Other forms link:</strong>
+  <%= @actor_form.other_forms_link_id %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @actor_form.actor_id %>
+</p>
+
+<%= link_to 'Edit', edit_actor_form_path(@actor_form) %> |
+<%= link_to 'Back', actor_forms_path %>

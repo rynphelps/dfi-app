@@ -1,0 +1,27 @@
+<%= form_for(actor_language) do |f| %>
+  <% if actor_language.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor_language.errors.count, "error") %> prohibited this actor_language from being saved:</h2>
+
+      <ul>
+      <% actor_language.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :actor_id %>
+    <%= f.number_field :actor_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :language_dialect_id %>
+    <%= f.number_field :language_dialect_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

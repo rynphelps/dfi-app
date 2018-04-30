@@ -1,0 +1,1 @@
+json.partial! "audition_links/audition_link", audition_link: @audition_link

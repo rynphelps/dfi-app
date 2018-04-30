@@ -1,0 +1,1 @@
+json.array! @audition_links, partial: 'audition_links/audition_link', as: :audition_link

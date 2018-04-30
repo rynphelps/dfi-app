@@ -1,0 +1,1 @@
+json.array! @actor_auditions, partial: 'actor_auditions/actor_audition', as: :actor_audition

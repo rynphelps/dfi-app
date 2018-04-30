@@ -1,0 +1,1 @@
+json.array! @actor_pictures, partial: 'actor_pictures/actor_picture', as: :actor_picture

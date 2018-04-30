@@ -1,0 +1,1 @@
+json.array! @language_dialects, partial: 'language_dialects/language_dialect', as: :language_dialect

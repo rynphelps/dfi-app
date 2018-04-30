@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @actor_language.actor_id %>
+</p>
+
+<p>
+  <strong>Language dialect:</strong>
+  <%= @actor_language.language_dialect_id %>
+</p>
+
+<%= link_to 'Edit', edit_actor_language_path(@actor_language) %> |
+<%= link_to 'Back', actor_languages_path %>

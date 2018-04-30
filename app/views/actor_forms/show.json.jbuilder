@@ -1,0 +1,1 @@
+json.partial! "actor_forms/actor_form", actor_form: @actor_form

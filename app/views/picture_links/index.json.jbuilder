@@ -1,0 +1,1 @@
+json.array! @picture_links, partial: 'picture_links/picture_link', as: :picture_link

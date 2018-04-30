@@ -1,0 +1,22 @@
+<%= form_for(other_forms_link) do |f| %>
+  <% if other_forms_link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(other_forms_link.errors.count, "error") %> prohibited this other_forms_link from being saved:</h2>
+
+      <ul>
+      <% other_forms_link.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :form_link %>
+    <%= f.text_field :form_link %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
